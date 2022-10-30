@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		55A63D69290DE4AC002B8DCC /* Solar_BoostApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A63D68290DE4AC002B8DCC /* Solar_BoostApp.swift */; };
-		55A63D6B290DE4AC002B8DCC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A63D6A290DE4AC002B8DCC /* ContentView.swift */; };
+		55A63D6B290DE4AC002B8DCC /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A63D6A290DE4AC002B8DCC /* MapView.swift */; };
 		55A63D6D290DE4B3002B8DCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55A63D6C290DE4B3002B8DCC /* Assets.xcassets */; };
 		55A63D70290DE4B3002B8DCC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55A63D6F290DE4B3002B8DCC /* Preview Assets.xcassets */; };
+		55A63D77290DE9DC002B8DCC /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A63D76290DE9DC002B8DCC /* MapViewModel.swift */; };
+		55A63D79290DEAB3002B8DCC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A63D78290DEAB3002B8DCC /* MainView.swift */; };
+		55A63D7B290DEF5C002B8DCC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A63D7A290DEF5C002B8DCC /* ContentView.swift */; };
+		55A63D7D290DFF60002B8DCC /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A63D7C290DFF60002B8DCC /* Place.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		55A63D65290DE4AC002B8DCC /* Solar Boost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Solar Boost.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55A63D68290DE4AC002B8DCC /* Solar_BoostApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solar_BoostApp.swift; sourceTree = "<group>"; };
-		55A63D6A290DE4AC002B8DCC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		55A63D6A290DE4AC002B8DCC /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		55A63D6C290DE4B3002B8DCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55A63D6F290DE4B3002B8DCC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		55A63D76290DE9DC002B8DCC /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		55A63D78290DEAB3002B8DCC /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		55A63D7A290DEF5C002B8DCC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		55A63D7C290DFF60002B8DCC /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +60,11 @@
 			isa = PBXGroup;
 			children = (
 				55A63D68290DE4AC002B8DCC /* Solar_BoostApp.swift */,
-				55A63D6A290DE4AC002B8DCC /* ContentView.swift */,
+				55A63D7A290DEF5C002B8DCC /* ContentView.swift */,
+				55A63D78290DEAB3002B8DCC /* MainView.swift */,
+				55A63D6A290DE4AC002B8DCC /* MapView.swift */,
+				55A63D76290DE9DC002B8DCC /* MapViewModel.swift */,
+				55A63D7C290DFF60002B8DCC /* Place.swift */,
 				55A63D6C290DE4B3002B8DCC /* Assets.xcassets */,
 				55A63D6E290DE4B3002B8DCC /* Preview Content */,
 			);
@@ -137,8 +149,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55A63D6B290DE4AC002B8DCC /* ContentView.swift in Sources */,
+				55A63D6B290DE4AC002B8DCC /* MapView.swift in Sources */,
+				55A63D7B290DEF5C002B8DCC /* ContentView.swift in Sources */,
+				55A63D79290DEAB3002B8DCC /* MainView.swift in Sources */,
+				55A63D7D290DFF60002B8DCC /* Place.swift in Sources */,
 				55A63D69290DE4AC002B8DCC /* Solar_BoostApp.swift in Sources */,
+				55A63D77290DE9DC002B8DCC /* MapViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +285,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Solar Boost/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -297,6 +314,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Solar Boost/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
